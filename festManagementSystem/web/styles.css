@@ -1,0 +1,143 @@
+/* Master Styles*/
+.body{
+  margin-top: 0px;
+  margin: 0px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* navigation bar*/
+.nav-background{
+  position: relative;
+}
+.nav-background-img{
+  height: 500px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*.navwrapper{
+  display: flex;
+  justify-content: space-between;
+}*/
+.left-side{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: top;
+  height: 100%;
+  text-align: center;
+  padding: 38px;
+}
+/*.navwrapper>.right-side{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  padding-top: 38px;
+}
+.right-side a{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  float: right;
+}*/
+
+.left-side{
+  display: flex;
+}
+.navwrapper >.left-side > div{
+  margin-right: 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.nav-link-wrapper{
+  height: 22px;
+  border-bottom: 5px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+  border-bottom: 2px solid white;
+}
+.nav-link-wrapper a:hover{
+  color: white;
+}
+
+.placeholder{
+  text-align: center;
+  font-family: fantasy;
+}
+/*description*/
+.description{
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 60px;
+  padding: 38px;
+  text-align: left;
+  font-size: 150%;
+}
+.description p{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+/*Events styles*/
+.Events>.headings{
+  margin-left: 50px;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+.Events>.details{
+  margin-left: 50px;
+  font-family: sans-serif;
+}
+.Events-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Event-wrapper{
+  position: relative;
+}
+.event-img-bg{
+  height: 350px;
+  width: 100%;
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text-wrapper{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+.img-darken{
+  transition: 1s;
+  filter: brightness(10%);
+}
+/*College details*/
+.img-details{
+  display: flex;
+  justify-content: space-between;
+}
